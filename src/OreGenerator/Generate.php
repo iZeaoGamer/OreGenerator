@@ -14,7 +14,7 @@ use pocketmine\level\Level;
 use pocketmine\block\Block;
 use pocketmine\block\IronOre;
 use pocketmine\block\Cobblestone;
-use pocketmine\block\Glowingobsidian;
+use pocketmine\block\GlowingObsidian;
 use pocketmine\block\DiamondOre;
 use pocketmine\block\EmeraldOre;
 use pocketmine\block\GoldOre;
@@ -34,7 +34,7 @@ class Generate extends PluginBase implements Listener{
         $end = false;
         for ($i = 0; $i <= 1; $i++) {
             $nearBlock = $block->getSide($i);
-            if ($nearBlock instanceof glowingobsidian) {
+            if ($nearBlock instanceof GlowingObsidian) {
                 $end = true;
             }
             if ($end) {
